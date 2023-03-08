@@ -40,6 +40,7 @@ class FirebaseDB() {
                     locals.addAll(Patient.PatientAllInstances)
                     for (x in locals) {
                         if (keys.contains(x.patientId)) {
+                            //check
                         } else {
                             Patient.killPatient(x.patientId)
                         }
@@ -47,7 +48,9 @@ class FirebaseDB() {
                 }
             }
 
-            override fun onCancelled(databaseError: DatabaseError) {}
+            override fun onCancelled(databaseError: DatabaseError) {
+            //cancel
+            }
         }
         database!!.child("patients").addValueEventListener(patientListener)
     }
