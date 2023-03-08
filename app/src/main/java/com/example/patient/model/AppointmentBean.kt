@@ -1,7 +1,6 @@
 package com.example.patient.model
 
 import android.content.Context
-import com.example.patient.viewmodel.AppointmentViewModel
 
 class AppointmentBean(c: Context) {
 
