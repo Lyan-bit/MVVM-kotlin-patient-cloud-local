@@ -54,6 +54,7 @@ class AppointmentBean(c: Context) {
 
     fun isListAppointmentError(): Boolean {
 	        errors.clear()
+		//if Statement
 	        return errors.size > 0
 	    }
 
