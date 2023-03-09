@@ -35,15 +35,21 @@ class PatientBean(c: Context) {
 	        
 	        errors.clear()
 	        
-          if (patientId != "") {}
+          if (patientId != "") {
+	  //ok
+	  }
 	         else {
 	               errors.add("patientId cannot be empty")
 	         }
-	          if (name != "") {}
+	          if (name != "") {
+		  //ok
+		  }
 	         else {
 	               errors.add("name cannot be empty")
 	         }
-	          if (appointmentId != "") {}
+	          if (appointmentId != "") {
+		  //ok
+		  }
 	         else {
 	               errors.add("appointmentId cannot be empty")
 	         }
@@ -68,15 +74,21 @@ class PatientBean(c: Context) {
 			if (!allPatientpatientIds.contains(patientId)) {
 				errors.add("The patientId is not exist")
 		    }
-          if (patientId != "") {}
+          if (patientId != "") {
+	  //ok
+	  }
 	         else {
 	               errors.add("patientId cannot be empty")
 	         }
-          if (name != "") {}
+          if (name != "") {
+	  //ok
+	  }
 	         else {
 	               errors.add("name cannot be empty")
 	         }
-          if (appointmentId != "") {}
+          if (appointmentId != "") {
+	  //ok
+	  }
 	         else {
 	               errors.add("appointmentId cannot be empty")
 	         }
