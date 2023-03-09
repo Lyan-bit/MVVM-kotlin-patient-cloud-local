@@ -35,11 +35,15 @@ class AppointmentBean(c: Context) {
 	        
 	 errors.clear()
 	        
-	 	 	           if (appointmentId != "") {}
+	 	 	           if (appointmentId != "") {
+				   //ok
+				   }
 	else {
 	 	  errors.add("appointmentId cannot be empty")
 	}
-          if (code != "") {}
+          if (code != "") {
+	  //ok
+	  }
 	else {
 	 	  errors.add("code cannot be empty")
 	}
@@ -70,11 +74,15 @@ class AppointmentBean(c: Context) {
 			if (!allAppointmentappointmentIds.contains(appointmentId)) {
 				errors.add("appointmentId" + checkParameter)
 		    }
-			          if (appointmentId != "") {}
+			          if (appointmentId != "") {
+				  //ok
+				  }
 	         else {
 	               errors.add("appointmentId cannot be empty")
 	         }
-	                  if (code != "") {}
+	                  if (code != "") {
+			  //ok
+			  }
 	         else {
 	               errors.add("code cannot be empty")
 	         }
