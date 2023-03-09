@@ -3,7 +3,6 @@ package com.example.patient.viewmodel
 import android.content.Context
 import com.example.patient.database.DB
 import com.example.patient.database.FileAccessor
-import com.example.patient.database.FirebaseDB
 import com.example.patient.model.Appointment
 import com.example.patient.model.AppointmentVO
 import java.util.ArrayList
@@ -31,8 +30,8 @@ class AppointmentViewModel private constructor(context: Context) {
     
 	/* This metatype code requires OclType.java, OclAttribute.java, OclOperation.java */
 	fun initialiseOclTypes() {
-        val AppointmentOclType: OclType = OclType.createByPKOclType("Appointment")
-		AppointmentOclType.setMetatype(Appointment::class.java)
+        val appointmentOclType: OclType = OclType.createByPKOclType("Appointment")
+		appointmentOclType.setMetatype(Appointment::class.java)
     }
 
     fun createAppointment(x: AppointmentVO) {
