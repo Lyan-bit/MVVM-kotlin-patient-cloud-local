@@ -9,7 +9,6 @@ import android.view.ViewGroup
 import android.view.LayoutInflater
 import android.view.inputmethod.InputMethodManager
 import androidx.fragment.app.Fragment
-import com.example.patient.viewmodel.PatientViewModel
 import com.example.patient.R
 import com.example.patient.model.AppointmentBean
 import com.example.patient.viewmodel.AppointmentViewModel
