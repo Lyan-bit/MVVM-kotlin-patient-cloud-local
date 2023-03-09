@@ -11,7 +11,6 @@ import android.widget.*
 import androidx.fragment.app.Fragment
 import com.example.patient.viewmodel.PatientViewModel
 import com.example.patient.R
-import com.example.patient.model.AppointmentBean
 import com.example.patient.model.PatientBean
 import com.example.patient.viewmodel.AppointmentViewModel
 
