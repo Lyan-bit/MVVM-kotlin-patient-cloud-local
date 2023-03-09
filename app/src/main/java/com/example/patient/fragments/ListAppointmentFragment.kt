@@ -9,7 +9,6 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.patient.viewmodel.PatientViewModel
 import com.example.patient.R
 import com.example.patient.adapter.AppointmentRecyclerViewAdapter
 import com.example.patient.model.AppointmentVO
