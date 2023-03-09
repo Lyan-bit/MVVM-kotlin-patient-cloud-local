@@ -124,6 +124,7 @@ class PatientBean(c: Context) {
 
 	fun isAddPatientattendsAppointmentError(): Boolean {
 		errors.clear()
+		//isAddPatientattendsAppointmentError
 		return errors.size > 0
 	}
 
@@ -134,6 +135,7 @@ class PatientBean(c: Context) {
 
 	fun isRemovePatientattendsAppointmentError(): Boolean {
 		errors.clear()
+		//isRemovePatientattendsAppointmentError
 		return errors.size > 0
 	}
 
