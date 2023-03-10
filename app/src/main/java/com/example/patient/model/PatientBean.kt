@@ -124,7 +124,9 @@ class PatientBean(c: Context) {
 
 	fun isAddPatientattendsAppointmentError(): Boolean {
 		errors.clear()
-		//isAddPatientattendsAppointmentError
+		if (appointmentId != "")
+		else 
+		errors.add(appointmentId+ checkParameter)
 		return errors.size > 0
 	}
 
