@@ -21,12 +21,6 @@ class PatientViewModel private constructor(context: Context) {
         }
     }
     
-	/* This metatype code requires OclType.java, OclAttribute.java, OclOperation.java */
-	fun initialiseOclTypes() {
-        val patientOclType: OclType = OclType.createByPKOclType("Patient")
-		patientOclType.setMetatype(Patient::class.java)
-    }
-    
     fun createPatient(x: PatientVO) {
 		editPatient(x)
 	}
