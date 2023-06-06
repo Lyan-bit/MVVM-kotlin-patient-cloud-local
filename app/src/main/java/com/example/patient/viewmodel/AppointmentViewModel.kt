@@ -27,12 +27,6 @@ class AppointmentViewModel private constructor(context: Context) {
             return instance ?: AppointmentViewModel(context)
         }
     }
-    
-	/* This metatype code requires OclType.java, OclAttribute.java, OclOperation.java */
-	fun initialiseOclTypes() {
-        val appointmentOclType: OclType = OclType.createByPKOclType("Appointment")
-		appointmentOclType.setMetatype(Appointment::class.java)
-    }
 
     fun createAppointment(x: AppointmentVO) {
           db.createAppointment(x)
