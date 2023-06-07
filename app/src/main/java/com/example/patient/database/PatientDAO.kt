@@ -138,7 +138,7 @@ class PatientDAO {
             try {
                 val map = obj as HashMap<String, Object>
                 val id: String = map["patientId"].toString()
-                var patientx: Patient? = Patient.PatientIndex.get(id)
+                var patientx: Patient? = Patient.PatientIndex[id]
                 if (patientx == null) {
                     patientx = Patient.createByPKPatient(id)
                 }
