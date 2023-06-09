@@ -1,14 +1,14 @@
-package com.example.patient.model
+package com.example.patient
 
 import java.util.ArrayList
 
 class AppointmentVO  {
 
-    private var appointmentId: String = ""
-    private var code: String = ""
+     var appointmentId: String = ""
+     var code: String = ""
 
     constructor() {
-        //constructor
+    	//constructor
     }
 
     constructor(appointmentIdx: String, 
@@ -33,22 +33,6 @@ class AppointmentVO  {
             res.add(list[i].toString())
         }
         return res
-    }
-    
-    fun getAppointmentId(): String {
-        return appointmentId
-    }
-    
-    fun getCode(): String {
-        return code
-    }
-
-    fun setAppointmentId(x: String) {
-    	appointmentId = x
-    }
-    
-    fun setCode(x: String) {
-    	code = x
     }
     
 }
