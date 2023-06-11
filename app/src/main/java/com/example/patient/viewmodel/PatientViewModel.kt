@@ -26,14 +26,14 @@ class PatientViewModel private constructor(context: Context) {
 	}
 				    
     fun editPatient(x: PatientVO) {
-		var obj = getPatientByPK(x.getPatientId())
+		var obj = getPatientByPK(x.patientId)
 		if (obj == null) {
-			obj = Patient.createByPKPatient(x.getPatientId())
+			obj = Patient.createByPKPatient(x.patientId)
 		}
 			
-		  obj.patientId = x.getPatientId()
-		  obj.name = x.getName()
-		  obj.appointmentId = x.getAppointmentId()
+		  obj.patientId = x.patientId
+		  obj.name = x.name
+		  obj.appointmentId = x.appointmentId
 		cdb.persistPatient(obj)
 		currentPatient = x
 	}
@@ -41,7 +41,7 @@ class PatientViewModel private constructor(context: Context) {
 	fun searchPatientById(search: String) : PatientVO {
 		var res = PatientVO()
 		for (x in currentPatients.indices) {
-			if ( currentPatients[x].getPatientId().toString() == search)
+			if ( currentPatients[x].patientId.toString() == search)
 			res = currentPatients[x]
 		}
 		return res
@@ -116,7 +116,7 @@ class PatientViewModel private constructor(context: Context) {
     fun allPatientPatientIds(): ArrayList<String> {
         val res: ArrayList<String> = ArrayList()
             for (x in currentPatients.indices) {
-                res.add(currentPatients[x].getPatientId())
+                res.add(currentPatients[x].patientId)
             }
         return res
     }
