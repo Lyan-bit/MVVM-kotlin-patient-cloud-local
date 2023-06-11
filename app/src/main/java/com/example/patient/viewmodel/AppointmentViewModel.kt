@@ -58,9 +58,9 @@ class AppointmentViewModel private constructor(context: Context) {
 		var res = ArrayList<Appointment>()
 			for (x in currentAppointments.indices) {
 					val vo: AppointmentVO = currentAppointments[x]
-				    val itemx = Appointment.createByPKAppointment(vo.getAppointmentId())
-	            itemx.appointmentId = vo.getAppointmentId()
-            itemx.code = vo.getCode()
+				    val itemx = Appointment.createByPKAppointment(vo.appointmentId)
+	            itemx.appointmentId = vo.appointmentId
+            itemx.code = vo.code
 			res.add(itemx)
 		}
 		return res
@@ -82,8 +82,8 @@ class AppointmentViewModel private constructor(context: Context) {
 	        } else {
 	            val vo: AppointmentVO = res[0]
 	            val itemx = Appointment.createByPKAppointment(value)
-            itemx.appointmentId = vo.getAppointmentId()
-            itemx.code = vo.getCode()
+            itemx.appointmentId = vo.appointmentId
+            itemx.code = vo.code
 	            itemx
 	        }
     }
@@ -96,7 +96,7 @@ class AppointmentViewModel private constructor(context: Context) {
         currentAppointments = db.listAppointment()
         val res: ArrayList<String> = ArrayList()
             for (appointment in currentAppointments.indices) {
-                res.add(currentAppointments[appointment].getAppointmentId())
+                res.add(currentAppointments[appointment].appointmentId)
             }
         return res
     }
@@ -122,9 +122,9 @@ class AppointmentViewModel private constructor(context: Context) {
 		var res = ArrayList<Appointment>()
 			for (x in currentAppointments.indices) {
 					val vo: AppointmentVO = currentAppointments[x]
-				    val itemx = Appointment.createByPKAppointment(vo.getAppointmentId())
-	            itemx.appointmentId = vo.getAppointmentId()
-            itemx.code = vo.getCode()
+				    val itemx = Appointment.createByPKAppointment(vo.appointmentId)
+	            itemx.appointmentId = vo.appointmentId
+            itemx.code = vo.code
 			res.add(itemx)
 		}
 		return res
@@ -135,9 +135,9 @@ class AppointmentViewModel private constructor(context: Context) {
 		var res = ArrayList<Appointment>()
 			for (x in currentAppointments.indices) {
 					val vo: AppointmentVO = currentAppointments[x]
-				    val itemx = Appointment.createByPKAppointment(vo.getAppointmentId())
-	            itemx.appointmentId = vo.getAppointmentId()
-            itemx.code = vo.getCode()
+				    val itemx = Appointment.createByPKAppointment(vo.appointmentId)
+	            itemx.appointmentId = vo.appointmentId
+            itemx.code = vo.code
 			res.add(itemx)
 		}
 		return res
